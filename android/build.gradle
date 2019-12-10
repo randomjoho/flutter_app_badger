@@ -16,7 +16,7 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://raw.github.com/g123k/ShortcutBadger/master" }
+//        maven { url "https://raw.github.com/g123k/ShortcutBadger/master" }
     }
 }
 
@@ -35,6 +35,8 @@ android {
 }
 
 dependencies {
+//    implementation files('libs/classes.jar')
     //noinspection GradleDependency
-    implementation "me.leolin:ShortcutBadger:1.1.22"
+    //    implementation "me.leolin:ShortcutBadger:1.1.22"
+    implementation files('src/main/libs/classes.jar')
 }
